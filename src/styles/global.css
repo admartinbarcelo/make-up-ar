@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
+  }
+  
+  .section-title {
+    @apply font-serif font-light text-3xl md:text-4xl lg:text-5xl tracking-wide text-neutral-800;
+  }
+  
+  .section-subtitle {
+    @apply font-sans font-light text-base md:text-lg text-neutral-600 max-w-2xl mx-auto mt-4;
+  }
+}

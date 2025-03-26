@@ -1,0 +1,46 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "CONSULTA INICIAL",
+    description: "Conversamos sobre tus necesidades, estilo y expectativas para tu evento especial."
+  },
+  {
+    number: "02",
+    title: "PRUEBA DE MAQUILLAJE",
+    description: "Realizamos una prueba para encontrar el look perfecto y hacer ajustes según tus preferencias."
+  },
+  {
+    number: "03",
+    title: "PLANIFICACIÓN",
+    description: "Organizamos los tiempos y detalles logísticos para el día del evento."
+  },
+  {
+    number: "04",
+    title: "EL GRAN DÍA",
+    description: "Aplico el maquillaje acordado y te proporciono un kit de retoque para mantener el look perfecto."
+  }
+];
+---
+
+<section class="py-20 md:py-28 bg-white">
+  <div class="container">
+    <div class="text-center mb-16">
+      <div class="w-12 h-px bg-primary-300 mx-auto mb-6"></div>
+      <h2 class="section-title">MI PROCESO</h2>
+      <p class="section-subtitle">
+        Mi proceso está diseñado para asegurar que luzcas exactamente como deseas en tu día especial
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {steps.map(step => (
+        <div class="border border-neutral-200 hover:border-primary-200 p-8 transition-all duration-300">
+          <span class="block text-primary-400 font-light text-sm mb-4">{step.number}</span>
+          <h3 class="font-serif text-lg font-light tracking-wide mb-4">{step.title}</h3>
+          <p class="text-neutral-600 font-light">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

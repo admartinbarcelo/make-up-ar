@@ -1,0 +1,38 @@
+---
+import { Image } from 'astro:assets';
+
+---
+
+<section id="home" class="relative pt-32 pb-20 md:pt-40 md:pb-28 lg:pt-48 lg:pb-36 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-r from-primary-50/90 to-primary-100/80 mix-blend-multiply"></div>
+    <Image 
+      src={"/placeholder.svg"} 
+      alt="Elegant makeup by Make up Artist" 
+      class="w-full h-full object-cover"
+      width={1920}
+      height={1080}
+      quality={90}
+    />
+  </div>
+  
+  <div class="container relative z-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-sm uppercase tracking-widest text-primary-700 mb-4 font-light">Maquillaje Profesional</p>
+      <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-neutral-900 mb-6">
+        El arte de realzar tu belleza natural
+      </h1>
+      <p class="text-neutral-700 font-light max-w-xl mx-auto mb-10 text-base md:text-lg">
+        Maquillaje profesional para novias y eventos especiales. Creando looks únicos que resaltan tu belleza natural con un toque de sofisticación.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="bg-primary-500 hover:bg-primary-600 text-white px-8 py-3 text-sm tracking-wider transition-colors">
+          RESERVAR CONSULTA
+        </a>
+        <a href="#gallery" class="border border-neutral-300 hover:border-primary-300 text-neutral-800 px-8 py-3 text-sm tracking-wider transition-colors">
+          VER PORTAFOLIO
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
